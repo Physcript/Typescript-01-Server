@@ -20,7 +20,6 @@ export const loginCon = (req: Request, res: Response) => {
 
 export const authCon = (req: Request, res: Response) => {
 	const user = res.locals.user
-	console.log(user)
 	res.status(200).json({
 		data: {
 			user: {
