@@ -25,7 +25,7 @@ app.use(cookieParser())
 
 // cors policy
 app.use((req,res,next)=> {
-	res.setHeader('access-control-allow-origin', '*')
+	res.setHeader('access-control-allow-origin', 'http://localhost:3000')
 	res.setHeader('access-control-allow-methods', 'PUT,GET,POST,OPTIONS,DELETE,PATCH')
 	res.setHeader('access-control-allow-headers','X-Requested-With,Content-Type')
 	res.setHeader('access-control-allow-credentials', 'true')
